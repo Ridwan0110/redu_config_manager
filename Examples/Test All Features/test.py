@@ -1,10 +1,9 @@
 # test.py
 
 import os
-from pathlib import Path
 import yaml
 
-from config_manager import ConfigManager
+from redu_config_manager.redu_config_manager import ConfigManager
 
 def create_sample_yaml(path):
     config_data = {
