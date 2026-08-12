@@ -1,3 +1,42 @@
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "redu-config-manager"
+version = "1.0.1"
+description = "A simple configuration manager that reads and controls a file, provides methods to access key-values programmatically."
+readme = "README.md"
+requires-python = ">=3.6"
+license = "MIT"
+authors = [
+    { name = "Ridwan Hossain Abid" }
+]
+keywords = [
+    "configuration manager",
+    "config manager",
+    "yaml",
+    "config",
+    "settings",
+    "application configuration",
+    "python config manager"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License"
+]
+dependencies = [
+    "pyyaml>=6.0.0,<7.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/Ridwan0110/redu_config_manager"
+Repository = "https://github.com/Ridwan0110/redu_config_manager"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["redu_config_manager*"]
+exclude = ["pyvenv*", "Examples*", "GitHub*", "docs*", "test*", ".github"]
