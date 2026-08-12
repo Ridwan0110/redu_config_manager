@@ -132,3 +132,20 @@ class ConfigManager:
         config[keys[-1]] = value
         if save:
             self.save_config()
+
+    @property
+    def get_config_dict(self) -> dict:
+        """Returns ``self._config`` from memory"""
+        return self._config
+
+    def replace_config_dict(self, config_dict: dict):
+        """
+        Replaces in-memory ``self._config`` with ``config_dict``
+
+        Args:
+            config_dict (dict): The dictionary to replace with as config
+        """
+        if not config_dict or not isinstance(config_dict, dict):
+            return
+
+        self._config = config_dict
