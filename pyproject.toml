@@ -38,4 +38,4 @@ Repository = "https://github.com/Ridwan0110/redu_config_manager"
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["redu_config_manager*"]
-exclude = ["pyvenv*", "Examples*", "GitHub*", "docs*", "test*", ".github"]
+exclude = ["pyvenv*", "Examples*", "GitHub*", "docs*", "tests*", ".github"]
