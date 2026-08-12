@@ -10,7 +10,7 @@ import yaml
 from pathlib import Path
 from typing import Union
 
-__version__ = "1.0.1"
+__version__ = "1.1.0"
 
 # Only these supported file formats will be parsed correctly.
 # Note: Adding support for more file formats is possible if the logic is implemented.

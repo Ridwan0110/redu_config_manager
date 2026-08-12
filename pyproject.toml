@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "redu-config-manager"
-version = "1.0.1"
+version = "1.1.0"
 description = "A simple configuration manager that reads and controls a file, provides methods to access key-values programmatically."
 readme = "README.md"
 requires-python = ">=3.6"
